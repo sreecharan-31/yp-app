@@ -1,0 +1,1 @@
+export const API_URL = 'https://sreecharan31.pythonanywhere.com/distance';

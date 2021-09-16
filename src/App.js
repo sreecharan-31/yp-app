@@ -22,7 +22,7 @@ function App() {
       }
     })
       .then(response => {
-        setResponse(response.data);
+        setResponse(response.data ? response.data : "Cannot be Determined");
       })
       .catch(error => {
         setResponse(JSON.stringify(error?.response?.data?.message || error.message));

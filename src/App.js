@@ -25,7 +25,7 @@ function App() {
         setResponse(response.data);
       })
       .catch(error => {
-        setResponse(JSON.stringify(error.response.data.message));
+        setResponse(JSON.stringify(error?.response?.data?.message || error.message).toString());
       });
   };
 
